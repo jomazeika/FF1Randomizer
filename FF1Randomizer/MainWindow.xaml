@@ -41,6 +41,7 @@
 						<CheckBox x:Name="MagicShopsCheckBox" IsChecked="{Binding Flags.MagicShops}" Content="Magic Shops" ToolTip="Magic shop contents are shuffled."/>
 						<CheckBox x:Name="MagicLevelsCheckBox" IsChecked="{Binding Flags.MagicLevels}" Content="Magic Levels" ToolTip="Magic spells have their levels shuffled."/>
 						<CheckBox x:Name="MagicPermissionsCheckBox" IsChecked="{Binding Flags.MagicPermissions}" IsEnabled="{Binding Flags.MagicLevels}" Content="Keep Permissions" ToolTip="Retain the permissions of spells, even if they're shuffled to lower levels." Margin="30,5,0,0"/>
+						<CheckBox x:Name="MagicNameCheckBox" IsChecked="{Binding Flags.RandomSpellNames}" Content="Random Spell Names" ToolTip="Magic spells have randomly generated names."/>
 						<CheckBox x:Name="ItemMagicCheckBox" IsChecked="{Binding Flags.ItemMagic}" Content="Item Magic" ToolTip="Magic items have randomly assigned spells."/>
 						<Label Margin="5,5,0,0"/>
 						<CheckBox x:Name="RngCheckBox" IsChecked="{Binding Flags.Rng}" Content="RNG Table" ToolTip="Shuffle the RNG table so that encounters are more difficult to predict."/>

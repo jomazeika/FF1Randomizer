@@ -242,6 +242,11 @@ namespace FF1Lib
 				ShuffleMagicShops(rng);
 			}
 
+			if (flags.RandomSpellNames)
+			{
+				ShuffleMagicNames(rng);
+			}
+
 			if (flags.MagicLevels)
 			{
 				FixWarpBug(); // The warp bug only needs to be fixed if the magic levels are being shuffled

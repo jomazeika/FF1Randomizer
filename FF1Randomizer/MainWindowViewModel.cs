@@ -212,6 +212,16 @@ namespace FF1Randomizer
 					PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("MagicPermissions"));
 				}
 			}
+			public bool RandomSpellNames
+			{
+				get => Flags.RandomSpellNames;
+				set
+				{
+					Flags.RandomSpellNames = value;
+					PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("RandomSpellNames"));
+				}
+			}
+
 			public bool ItemMagic
 			{
 				get => Flags.ItemMagic;
